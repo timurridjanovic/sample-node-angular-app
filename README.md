@@ -5,16 +5,10 @@ Sample Node Angular App
 
 ```
 npm install
-```
 
-```
 gulp
-```
 
-```
 gulp watch
-```
 
-```
 npm start
 ```
