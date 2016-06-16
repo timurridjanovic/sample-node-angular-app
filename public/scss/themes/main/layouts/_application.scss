@@ -1,0 +1,11 @@
+.application {
+	.wrapper {
+		@include grid-size();
+		margin: 0 auto;
+
+		.page-header {
+			margin-top: 4rem;
+			text-align: center;
+		}
+	}
+}

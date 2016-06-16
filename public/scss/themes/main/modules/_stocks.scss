@@ -1,0 +1,19 @@
+.stock-results {
+	li {
+		line-height: 1.5rem;
+	}
+
+	.negative-change {
+		color: $error-red;
+		&:before {
+			content: '\2193';
+		}
+	}
+
+	.positive-change {
+		color: green;
+		&:before {
+			content: '\2191';
+		}
+	}
+}

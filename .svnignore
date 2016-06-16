@@ -1,0 +1,7 @@
+#type this in command line: svn propset svn:ignore -F .svnignore .
+node_modules
+build
+styleguide
+bower_components
+styleguide
+.DS_Store

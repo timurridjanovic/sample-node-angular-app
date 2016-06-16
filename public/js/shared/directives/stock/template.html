@@ -1,0 +1,10 @@
+<ul class="stock-results">
+	<li>Company name: {{vm.stock.companyName}}</li>
+	<li>Symbol: {{vm.stock.symbol}}</li>
+	<li>Last trade price: {{vm.stock.lastTradePrice}} <span ng-show="vm.stock.lastTradePrice" ng-class="vm.stock.change ? 'positive-change' : 'negative-change'"></span></li>
+	<li ng-if="!vm.editable">Number of shares owned: {{vm.stock.numSharesOwned}}</li>
+	<li ng-if="vm.editable">Buy shares:
+		<input ng-model="vm.stock.numSharesOwned" ng-change="vm.numSharesChanged(vm.stock.numSharesOwned)" type="text"/>
+	</li>
+	<li>Market value of stake: {{vm.stock.stakeValue | currency:"$":2}}</li>
+</ul>

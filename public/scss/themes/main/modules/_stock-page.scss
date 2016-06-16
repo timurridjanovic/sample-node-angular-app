@@ -1,0 +1,48 @@
+.stock-page {
+	section.search {
+
+		.title {
+			display: inline-block;
+		}
+		input {
+			width: 100%;
+			margin-top: 0.5rem;
+		}
+
+		@include tablet {
+			text-align: center;
+			input {
+				width: 30rem;
+			}
+		}
+	}
+
+	section.results {
+		margin-top: 2rem;
+		.save-stock-error {
+			color: $error-red;
+		}
+
+		input {
+			width: 3rem;
+		}
+
+	}
+
+	section.saved-portfolio {
+		margin-top: 2rem;
+		.saved-stock {
+			display: inline-block;
+			width: 100%;
+			vertical-align: text-top;
+
+			@include tablet {
+				width: 50%;
+			}
+
+			@include desktop {
+				width: 33%;
+			}
+		}
+	}
+}

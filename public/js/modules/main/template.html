@@ -1,0 +1,31 @@
+<div class="application">
+	<div class="wrapper">
+		<div class="stock-page">
+			<h1 class="page-header" >Welcome to your stock portfolio</h1>
+			<section class="search">
+				<div class="title">Search a symbol: </div>
+				<input ng-model="symbol" ng-change="onSymbolChange(symbol)" type="text"/>
+			</section>
+			<section class="results">
+				<h2>Pick a stock</h2>
+				<stock data="stock" editable="true"></stock>
+				<div class="save-stock">
+					<button ng-click="saveStock(stock)" type="button">save stock</button>
+					<div class="save-stock-error">
+						{{savedStocksError}}
+					</div>
+				</div>
+			</section>
+			<section class="saved-portfolio">
+				<h2>Your Portfolio</h2>
+				<div class="saved-stock" ng-repeat="stock in savedStocks">
+					<stock data="stock"></stock>
+					<div class="remove-stock">
+						<button class="remove" ng-click="removeStock(stock)" type="button">delete</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+

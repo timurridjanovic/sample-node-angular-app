@@ -1,0 +1,6 @@
+node_modules
+build
+styleguide
+bower_components
+styleguide
+.DS_Store
